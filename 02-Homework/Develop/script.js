@@ -1,15 +1,23 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+// User input variables
+let confirmLowercase;
+let confirmUppercase;
+let confirmCharacter;
+let confirmNumber;
+let choices;
+let enter;
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// Four choices for user password value
+// lower case
+let lCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w","x", "y", "z"];
+// uppercase
+let uCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W","X", "Y", "Z"];
+// character
+let character = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "=", "+", "`", "~", "_", "-", "|", "?", ">", "<", "{", ";", ":", "[", "]","}"];
+// numbers
+let nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  passwordText.value = password;
 
-}
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
+
+  
