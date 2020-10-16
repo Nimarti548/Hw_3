@@ -100,7 +100,19 @@ function generatePassword() {
   else if (confirmUppercase) {
       choices = uCase;
   };
+  // password variable is an array placeholder for user generated amount of length
+  let password = [];
 
+  // Start random selection variables:
+  // Random selection for all variables: 
+  for (let i = 0; i < enter; i++) {
+      let pickChoices = choices[Math.floor(Math.random() * choices.length)];
+      password.push(pickChoices);
+  }
+  
+ let NPW = password.join("");
+  return NPW;
+}
 
 
   
