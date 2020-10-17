@@ -114,5 +114,16 @@ function generatePassword() {
   return NPW;
 }
 
+// Copy the password value on click
+let copy = document.querySelector("#copy");
+copy.addEventListener("click", function () {
+    copyPassword();
+});
 
+// function to copy password
+function copyPassword() {
+    document.getElementById("password").select();
+    document.execCommand("Copy");
+    alert("Password copied to clipboard!");
+}
   
