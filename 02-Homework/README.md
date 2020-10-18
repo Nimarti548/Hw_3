@@ -1,93 +1,27 @@
-# 03 JavaScript: Password Generator
+# 3 Javascript: Password Generator
 
-## Your Task
+- In this homework I was tasked to create a random password generator that creates passwords based on perameters that are chosen by the user.
 
-This week’s homework requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+- To start this application I first defined the variables that I was going to use for the app, i.e. users "choices", and "enter" as what the user entered as the length of the password.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+- Next I went ahead and defined all of the arrays I was going to use for the parameters of the password. Numbers, special characters, upper and lower case letters.
 
-## User Story
+- Once all of my varibles and arrays were defined, I then started to write some functions.
+  - First I added a Click Event Listener on the Generate Button.
+  - Next I started the code for how the function would work.
+    - Inside the function I defined the prompt for the first parameter which was the length and set the guide lines for the parameter which require the user to choose any where from 8 to 128 characters using conditional statements.
+    - Using the conditional statements I defined what the apps response should be if the parameters for the password were not met and if one, two, three, or four of the parameters were chosen.
+    - Using .concat I was able to join the arrays chosen with out changing the parent arrays.
+  - Once I had all of my conditionals explained I created an empty array named password that would hold the generated password.
+  - Using a for loop I created an algoritim that would make the app choose random characters from the chosen arrays, with .push I was able to tell the generator to move the chosen characters into the empty password array, and with .join I was able to combine the characters separated by a string and then using return to bring back the new password.
+  - Finally I created another function to copy the generated passwords and add them to users clipboard.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+<img src="../Assets/Screenshot2020-10-17164044.png"/>
 
-## Acceptance Criteria
+<img src=../Assets/Screenshot2020-10-17164117.png/>
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+<img src=../Assets/Screenshot2020-10-17164137.png/>
 
-## Mock-Up
+<img src=../Assets/screenshot2020-10-17164154.png/>
 
-The following image shows the web application's appearance and functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-- Satisfies all of the above acceptance criteria plus the following:
-
-  - The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-- Application deployed at live URL.
-
-- Application loads with no errors.
-
-- Application GitHub URL submitted.
-
-- GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-- Application user experience is intuitive and easy to navigate.
-
-- Application user interface style is clean and polished.
-
-- Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-- Repository has a unique name.
-
-- Repository follows best practices for file structure and naming conventions.
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages.
-
-- Repository contains quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![img1](../Assets/Screenshot2020-10-17164044.png)
