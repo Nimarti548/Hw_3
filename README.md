@@ -16,10 +16,10 @@
   - Using a for loop I created an algoritim that would make the app choose random characters from the chosen arrays, with .push I was able to tell the generator to move the chosen characters into the empty password array, and with .join I was able to combine the characters separated by a string and then using return to bring back the new password.
   - Finally I created another function to copy the generated passwords and add them to users clipboard.
 
-<img src="./Assets/Screenshot 2020-10-17 164044.png"/>
+<img src="./assets/Screenshot 2020-10-17 164044.png"/>
 
-<img src="./Assets/Screenshot 2020-10-17 164117.png"/>
+<img src="./assets/Screenshot 2020-10-17 164117.png"/>
 
-<img src="./Assets/Screenshot 2020-10-17 164137.png"/>
+<img src="./assets/Screenshot 2020-10-17 164137.png"/>
 
-<img src="./Assets/Screenshot 2020-10-17 164154.png"/>
+<img src="./assets/Screenshot 2020-10-17 164154.png"/>
